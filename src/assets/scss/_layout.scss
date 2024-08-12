@@ -1,0 +1,176 @@
+// 초기화면
+.home-wrap {
+  padding: 20px;
+  box-sizing: border-box;
+  .link-box {
+    > p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    & + .link-box {
+      margin-top: 20px;
+    }
+  }
+  ul {
+    display: flex;
+    margin-top: 10px;
+  }
+  li {
+    display: block;
+    & + li {
+      margin-left: 10px;
+    }
+    a {
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #111;
+      font-weight: 500;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      border: 1px solid #111;
+    }
+    p {
+      font-size: 14px;
+      color: #999;
+    }
+  }
+}
+#skipNav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  a {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: aquamarine;
+    color: #111;
+    text-align: center;
+    transform: translateY(-100%);
+    z-index: 1;
+    display: block;
+    &:focus,
+    &:active {
+      transform: translateY(0);
+    }
+  }
+}
+
+// 초기화면
+.wrap {
+  &.default {
+    text-align: center;
+    .header,
+    .footer {
+      margin: 0 auto;
+      padding: 20px 0;
+      background-color: #ffe4c4;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+    }
+    nav {
+      ul {
+        display: flex;
+        align-items: center;
+      }
+    }
+    .contents {
+      background-color: #8ee6c6;
+      height: 500px;
+    }
+    &.fix-layout {
+      width: 1400px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    &.fluid-layout {
+      display: block;
+      .header,
+      .footer {
+        width: 1400px;
+        margin: 0 auto;
+      }
+      .contents {
+        width: 1400px;
+        margin: 0 auto;
+        &.fluid {
+          width: 100%;
+        }
+      }
+    }
+    &.responsive-layout {
+      width: 100%;
+      max-width: 1400px;
+      margin: 0 auto;
+
+      @media all and (max-width: 1280px) {
+        .box-wrap {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media all and (max-width: 767px) {
+        .box-wrap {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media all and (max-width: 479px) {
+        .box-wrap {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    }
+  }
+
+  &.adaptive-layout {
+    &.desktop {
+      width: 1400px;
+      margin: 0 auto;
+    }
+    &.tablet {
+      width: 100%;
+      &.android {
+      }
+      &.ios {
+      }
+    }
+    &.mobile {
+      width: 100%;
+      .header-inner {
+        justify-content: center;
+      }
+      nav {
+        display: none;
+      }
+      &.android {
+      }
+      &.ios {
+      }
+    }
+  }
+  .typecheck-box {
+    p {
+      font-size: 20px;
+      line-height: 2;
+    }
+  }
+}
+// box샘플
+.box-wrap {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  //grid-template-columns: repeat(auto-fit, minmax(342.5px, 1fr));
+  gap: 10px;
+  .box {
+    border: 1px solid #111;
+    padding: 20px 0;
+    text-align: center;
+  }
+}

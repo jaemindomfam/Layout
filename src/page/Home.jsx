@@ -32,6 +32,11 @@ const Home = () => {
                 AdaptiveLayout
               </Link>
             </li>
+            <li>
+              <Link to="/DeviceDetect" target="_blank">
+                DeviceDetect
+              </Link>
+            </li>
           </ul>
         </div>
         <div className="link-box">

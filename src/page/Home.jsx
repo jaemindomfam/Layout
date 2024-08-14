@@ -28,6 +28,11 @@ const Home = () => {
               </Link>
             </li>
             <li>
+              <Link to="/GridLayout" target="_blank">
+                GridLayout
+              </Link>
+            </li>
+            <li>
               <Link to="/AdaptiveLayout" target="_blank">
                 AdaptiveLayout
               </Link>

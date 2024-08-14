@@ -5,6 +5,7 @@ import FixLayout from "./layout/FixLayout";
 import FluidLayout from "./layout/FluidLayout";
 import ResponsiveLayout from "./layout/ResponsiveLayout";
 import ResponsiveLayout2 from "./layout/ResponsiveLayout2";
+import GridLayout from "./layout/GridLayout";
 import AdaptiveLayout from "./layout/AdaptiveLayout";
 import DeviceDetect from "./layout/DeviceDetect";
 
@@ -29,6 +30,7 @@ function LocationDisplay() {
       <Route path="/FluidLayout" element={<FluidLayout />} />
       <Route path="/ResponsiveLayout" element={<ResponsiveLayout />} />
       <Route path="/ResponsiveLayout2" element={<ResponsiveLayout2 />} />
+      <Route path="/GridLayout" element={<GridLayout />} />
       <Route path="/AdaptiveLayout" element={<AdaptiveLayout />} />
       <Route path="/DeviceDetect" element={<DeviceDetect />} />
 

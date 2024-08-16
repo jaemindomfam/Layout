@@ -10,11 +10,10 @@ const SwFront = () => {
 
   return (
     <div
-      id="container"
       className={`responsive-layout dreams ${deviceType} ${osType} ${osVersion}`}
     >
-      <header id="header" className="header">
-        <div className="header-inner">
+      <header className="header">
+        <div className="container">
           <h1 className="logo">
             <Link to="/">
               <img src={Logo} alt="SW미래채움 로고" />
@@ -53,9 +52,9 @@ const SwFront = () => {
         </div>
       </header>
 
-      <main id="contents" className="contents">
+      <main id="contents">
         <div className="key-visual-wrap">
-          <div className="key-visual-inner">
+          <div className="container">
             <h2>
               소개
               <span>
@@ -65,22 +64,24 @@ const SwFront = () => {
           </div>
         </div>
         <section>
-          <div className="box-wrap">
-            <div className="box box1">box1</div>
-            <div className="box box2">box2</div>
-            <div className="box box3">box3</div>
-            <div className="box box4">box4</div>
-            <div className="box box5">box5</div>
-            <div className="box box6">box6</div>
-            <div className="box box7">box7</div>
-            <div className="box box8">box8</div>
-            <div className="box box9">box9</div>
-            <div className="box box10">box10</div>
+          <div className="container">
+            <div className="box-wrap">
+              <div className="box box1">box1</div>
+              <div className="box box2">box2</div>
+              <div className="box box3">box3</div>
+              <div className="box box4">box4</div>
+              <div className="box box5">box5</div>
+              <div className="box box6">box6</div>
+              <div className="box box7">box7</div>
+              <div className="box box8">box8</div>
+              <div className="box box9">box9</div>
+              <div className="box box10">box10</div>
+            </div>
           </div>
         </section>
       </main>
-      <footer id="footer" className="footer">
-        <div className="footer-inner">
+      <footer className="footer">
+        <div className="container">
           <div className="footer-link">
             <ul>
               <li>

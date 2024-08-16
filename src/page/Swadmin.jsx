@@ -9,12 +9,9 @@ const SwFront = () => {
   const { deviceType, osType, osVersion } = useDeviceDetector();
 
   return (
-    <div
-      id="container"
-      className={`fluid-layout swhub ${deviceType} ${osType} ${osVersion}`}
-    >
-      <header id="header" className="header">
-        <div className="header-inner">
+    <div className={`fluid-layout swhub ${deviceType} ${osType} ${osVersion}`}>
+      <header className="header">
+        <div className="container">
           <h1 className="logo">
             <Link to="/">
               <img src={Logo} alt="SW미래채움 로고" />
@@ -99,16 +96,18 @@ const SwFront = () => {
           </ul>
         </nav>
       </aside>
-      <main id="contents" className="contents">
+      <main id="contents">
         <h2>센터 소개</h2>
-        <section className="section">
-          <h3>
-            제목 입력 <span>*</span>
-          </h3>
-          <div className="test">가로 스크롤 테스트</div>
-          <div className="test2">세로 스크롤 테스트</div>
-          <div className="test2">세로 스크롤 테스트</div>
-          <div className="test2">세로 스크롤 테스트</div>
+        <section>
+          <div className="container">
+            <h3>
+              제목 입력 <span>*</span>
+            </h3>
+            <div className="test">가로 스크롤 테스트</div>
+            <div className="test2">세로 스크롤 테스트</div>
+            <div className="test2">세로 스크롤 테스트</div>
+            <div className="test2">세로 스크롤 테스트</div>
+          </div>
         </section>
       </main>
     </div>

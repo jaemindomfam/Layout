@@ -25,6 +25,7 @@ const Home = () => {
             <li>
               <Link to="/ResponsiveLayout2" target="_blank">
                 ResponsiveLayout2
+                <p>리액트 라이브러리(테스트 중)</p>
               </Link>
             </li>
             <li>
@@ -40,6 +41,7 @@ const Home = () => {
             <li>
               <Link to="/DeviceDetect" target="_blank">
                 DeviceDetect
+                <p>리액트 라이브러리(테스트 중)</p>
               </Link>
             </li>
           </ul>

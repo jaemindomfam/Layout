@@ -9,15 +9,13 @@ const SwFront = () => {
 
   return (
     <>
-      <div id="skipNav">
-        <Link to="#container">본문 바로가기</Link>
+      <div id="skipnav">
+        <Link to="#contenes">본문 바로가기</Link>
+        <Link to="#firstmenu">대메뉴 바로가기</Link>
       </div>
-      <div
-        id="container"
-        className={`fix-layout swhub ${deviceType} ${osType} ${osVersion}`}
-      >
-        <header id="header" className="header">
-          <div className="header-inner">
+      <div className={`fix-layout swhub ${deviceType} ${osType} ${osVersion}`}>
+        <header className="header">
+          <div className="container">
             <h1 className="logo">
               <Link to="/">
                 <img src={Logo} alt="SW미래채움 로고" />
@@ -26,7 +24,9 @@ const SwFront = () => {
             <nav className="gnb">
               <ul>
                 <li>
-                  <Link to="/">소개</Link>
+                  <Link to="/" id="firstmenu">
+                    소개
+                  </Link>
                 </li>
                 <li>
                   <Link to="/">교육안내</Link>
@@ -45,30 +45,32 @@ const SwFront = () => {
           </div>
         </header>
 
-        <main id="contents" className="contents">
+        <main id="contents">
           <div className="key-visual-wrap">
-            <div className="key-visual-inner">
+            <div className="container">
               <h2>교육안내</h2>
             </div>
           </div>
 
           <section>
-            <div className="box-wrap">
-              <div className="box box1">box1</div>
-              <div className="box box2">box2</div>
-              <div className="box box3">box3</div>
-              <div className="box box4">box4</div>
-              <div className="box box5">box5</div>
-              <div className="box box6">box6</div>
-              <div className="box box7">box7</div>
-              <div className="box box8">box8</div>
-              <div className="box box9">box9</div>
-              <div className="box box10">box10</div>
+            <div className="container">
+              <div className="box-wrap">
+                <div className="box box1">box1</div>
+                <div className="box box2">box2</div>
+                <div className="box box3">box3</div>
+                <div className="box box4">box4</div>
+                <div className="box box5">box5</div>
+                <div className="box box6">box6</div>
+                <div className="box box7">box7</div>
+                <div className="box box8">box8</div>
+                <div className="box box9">box9</div>
+                <div className="box box10">box10</div>
+              </div>
             </div>
           </section>
         </main>
-        <footer id="footer" className="footer">
-          <div className="footer-inner">
+        <footer className="footer">
+          <div className="container">
             <div className="footer-info">
               <ul>
                 <li>

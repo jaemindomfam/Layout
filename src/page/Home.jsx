@@ -25,11 +25,23 @@ const Home = () => {
             <li>
               <Link to="/ResponsiveLayout2" target="_blank">
                 ResponsiveLayout2
+                <p>리액트 라이브러리(테스트 중)</p>
+              </Link>
+            </li>
+            <li>
+              <Link to="/GridLayout" target="_blank">
+                GridLayout
               </Link>
             </li>
             <li>
               <Link to="/AdaptiveLayout" target="_blank">
                 AdaptiveLayout
+              </Link>
+            </li>
+            <li>
+              <Link to="/DeviceDetect" target="_blank">
+                DeviceDetect
+                <p>리액트 라이브러리(테스트 중)</p>
               </Link>
             </li>
           </ul>

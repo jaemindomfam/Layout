@@ -48,17 +48,10 @@ const AdaptiveLayout = () => {
   return (
     <>
       <div
-        className={`wrap adaptive-layout default ${deviceType} ${osType} ${osVersion}`}
+        className={`wrap default adaptive-layout ${deviceType} ${osType} ${osVersion}`}
       >
-        {/* <header className="header">HEADER</header>
-        <div className="typecheck-box">
-          <p>Device Type : {deviceType}</p>
-          <p>Operating System : {osType}</p>
-          <p>OS Version : {osVersion}</p>
-        </div>
-        <footer className="footer">FOOTER</footer> */}
-        <header id="header" className="header">
-          <div className="header-inner">
+        <header className="header">
+          <div className="container">
             <h1>logo</h1>
             <nav>
               <ul>
@@ -81,16 +74,22 @@ const AdaptiveLayout = () => {
             </nav>
           </div>
         </header>
-        <main id="contents" className="contents">
-          <div className="typecheck-box">
-            <p>Device Type : {deviceType}</p>
-            <p>Operating System : {osType}</p>
-            <p>OS Version : {osVersion}</p>
-          </div>
+        <main id="contents">
+          <section>
+            <div className="container">
+              <div className="typecheck-box">
+                <p>Device Type : {deviceType}</p>
+                <p>Operating System : {osType}</p>
+                <p>OS Version : {osVersion}</p>
+              </div>
+            </div>
+          </section>
         </main>
-        <footer id="footer" className="footer">
-          FOOTER
-          <address>주소</address>
+        <footer className="footer">
+          <div className="container">
+            FOOTER
+            <address>주소</address>
+          </div>
         </footer>
       </div>
     </>
